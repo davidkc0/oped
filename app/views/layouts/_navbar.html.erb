@@ -1,0 +1,50 @@
+
+<div class="collapse" id="exCollapsingNavbar">
+  <div class="collapse-bg p-a-1">
+    <div class='card'>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <%= link_to 'Blog', root_path, class: "nav-link #{yield(:blog_active)}" %>
+        </li>
+        <li class="list-group-item">
+          <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
+        </li>
+        <li class="list-group-item">
+          <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
+        </li>
+        <% if author_signed_in? %>
+          <li class="list-group-item">
+            <%= link_to 'my posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-light bg-faded">
+  <div class='container'>
+    <a class='navbar-brand' href='/'>
+      Op<span class='light'>Ed</span>
+    </a>
+    <ul class="nav navbar-nav nav-pull-right">
+      <li class="nav-item">
+        <%= link_to 'Blog', root_path, class: "nav-link #{yield(:blog_active)}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
+      </li>  
+      <% if author_signed_in? %>
+        <li class="nav-item">
+            <%= link_to 'my posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+          </li>
+        <li class="nav-item">
+            <%= link_to 'sign out', destroy_author_session_path, method: :delete,  class: "nav-link" %>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
