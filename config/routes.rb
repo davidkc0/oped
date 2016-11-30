@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :authors
   root to: 'blog/posts#index'
 
+  resources :author, only: [:show, :edit, :update]
   namespace :authors do 
   	resources :posts do 
       put 'publish' => 'posts#publish', on: :member

@@ -1,0 +1,11 @@
+<h1 class="edit">edit profile</h1>
+
+<%= form_for(@author, html: {multipart: true}) do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %> 
+
+	<%= f.file_field :avatar %> 
+
+
+	<%= f.submit "Save changes" %> 
+<% end %>

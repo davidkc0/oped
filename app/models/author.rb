@@ -24,4 +24,7 @@ class Author < ApplicationRecord
   devise :database_authenticatable, 
          :recoverable, :rememberable, :trackable, :validatable
   has_many :posts
+
+  validates :name, presence: true
+  mount_uploader :avatar, AvatarUploader
 end
