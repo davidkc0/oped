@@ -14,7 +14,7 @@
         </li>
         <% if author_signed_in? %>
           <li class="list-group-item">
-            <%= link_to 'my posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+            <%= link_to 'my posts', authors_posts_path(1), class: "nav-link #{yield(:author)}" %>
           </li>
         <% end %>
       </ul>

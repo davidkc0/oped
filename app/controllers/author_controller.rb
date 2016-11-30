@@ -1,8 +1,12 @@
 class AuthorController < ApplicationController
 	before_action :authenticate_author!, only: [:edit, :update]
 	before_action :check_authorization, only: [:edit, :update]
+	
 	before_action :set_author
+	
+
 	def show
+
 	end
 
 	def edit
@@ -14,7 +18,7 @@ class AuthorController < ApplicationController
 	end
 
 	def update 
-		if @author.update(user_params)
+		if @author.update(author_params)
 			redirect_to @author 
 		else 
 			flash.now[:alart] = "Something went wrong. Please try again."
@@ -32,9 +36,10 @@ class AuthorController < ApplicationController
 
 	def set_author 
 		@author = Author.find(params[:id])
+
 	end
 
-	def user_params
-		params.require(:author).permit(:name, :avatar)
+	def author_params
+		params.require(:author).permit(:name, :avatar, :description)
 	end
 end

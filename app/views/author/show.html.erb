@@ -1,5 +1,7 @@
+
 <h1 class="author_name">profile page for <%= @author.name %></h1>
-<%= image_tag @author.avatar.url(:thumb) if @author.avatar? %>
-<%if current_author.id == @author.id %>
+<%= avatar_for(@author) %>
+<%= @author.description %>
+<%if current_author == @author %>
 <%= link_to "Edit", edit_author_path(@author)%>
 <% end %>

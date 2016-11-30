@@ -14,16 +14,20 @@
 
   <body>
   	<%= render 'layouts/navbar' %>
-    <% if notice or alert %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    <% end %>
-  	<%= render 'layouts/footer' %>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583665b72cde5f5c"></script>
+    <div class="container">
 
-  	<div class="container <%= controller_name %> <%= action_name %>">
-  		<%= yield %>
-  	</div>
-    
+      <% if notice or alert %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      <% end %>
+
+    	<%= render 'layouts/footer' %>
+      
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583665b72cde5f5c"></script>
+
+    	<div class="container <%= controller_name %> <%= action_name %>">
+    		<%= yield %>
+    	</div>
+    </div>
   </body>
 </html>
