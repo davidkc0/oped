@@ -8,12 +8,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- tiny mce -->
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-    
-    <!-- end -->
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
   </head>
 
   <body>
-  	<%= render 'layouts/navbar' %>
+      <%= render 'layouts/navbar' %>
+    
     <div class="container">
 
       <% if notice or alert %>
@@ -29,5 +31,19 @@
     		<%= yield %>
     	</div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function(event){
+        // console.log($(window).scrollTop());
+        if ($(window).scrollTop() > 100) {
+          // Hide the Bar
+          $("body").addClass("hide-bar");
+        } else {
+          // Show the Bar
+          $("body").removeClass("hide-bar");
+        }
+      });
+    </script>
   </body>
 </html>

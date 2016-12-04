@@ -1,12 +1,14 @@
+
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   right: 0;
   left: 0;
-  height: 180px;
-  background-color: #191919;
-  color: white;
+  height: 200px;
+  background-color: white; 
+  box-shadow: 0 1.5px 1.5px  #f4f6f6;
 }
 
 #site-footer {
@@ -21,27 +23,50 @@
 }
 
 #site-footer .nav a {
-	color: white;
+	color: #373a3c;
+	font-size: 16px;
 	float: right;
 	padding-left: 20px;
 }
 
-#site-footer a:link{
-           color: white;
-       }
-       a:hover{
-           color: white;
-       }
-       a:active{
-           color: white;
-       }
 
-#site-footer .about {
+.about-site {
+ 	
+ 	display: inline;
+} 
+.contact {
+	display: inline;
+}
+
+.join {
+	display: inline;
+}
+
+#site-footer .row {
 	width: 50%;
-}     
+	display: block;
+
+} 
 
 #site-footer .blurb {
+	width: 50%;
 	display: inline;
+	font-size: 12px;
+	color: #373a3c;
 
+} 
+
+#site-footer .bottom {
+	margin-top: 10px;
+	margin-bottom: none;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+	color: #bbb;
+	width: calc(100% - 30px);
+} 
+.bottom a:link {
+	color: purple !important;
 }
 

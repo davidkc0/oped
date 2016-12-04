@@ -19,12 +19,38 @@
 @import "posts";
 @import "until";
 @import "avatar";
+@import "moving_button";
+@import "about";
+
+::selection {
+  background: #6968AB; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #6968AB; /* Gecko Browsers */
+}
 
 html {
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   min-height: 100%;
-}
+} 
+
+
 body {
   /* Margin bottom by footer height */
+  padding-top: 70px;
   margin-bottom: 500px;
+  background-color:  #f7f9f9;
+
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+p, div {
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+

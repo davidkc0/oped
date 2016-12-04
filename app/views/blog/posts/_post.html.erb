@@ -1,4 +1,4 @@
-<div class='col-sm-6 col-lg-8 offset-lg-2'>
+<!-- <div class='col-sm-6 col-lg-8 offset-lg-2'>
   <div class="card">
     <div class="card-topper" style="background-image: url(<%= post.banner_image_url%>);"></div>
     <div class="card-block">
@@ -8,5 +8,31 @@
       <p class="card-text"><%= truncate_html(post.body.html_safe, length: 250)%></p>
       <%= link_to 'read more', post, class: 'btn btn-read' %>
     </div>
+  </div>
+</div>  -->
+
+<div class='col-sm-6 col-lg-8 offset-lg-2'>
+  <div class="article-block">
+    <div class="article-image">
+      <%= link_to post do %>
+        <img class="image" src='<%= post.banner_image_url %>')>
+      <% end %>
+    </div>
+      <div class="article-body">
+        <h4 class="article-title">
+            <%= link_to post.title, post %>
+        </h4>
+        <div class="article-byline">
+          <p class="published-by">by <%= link_to post.author.name, post.author %></p>
+          <p class="separator">|</p>
+          <p class="published-date"><%= post.published_date%></p>
+        </div>
+        <br>
+        <div class="blurb">
+          <p class="article-blurb"><%= truncate_html(post.body.html_safe, length: 150)%></p>
+        </div>
+        
+      </div>
+
   </div>
 </div>

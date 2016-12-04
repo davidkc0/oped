@@ -1,5 +1,8 @@
 module Authors 
 	class PostsController < AuthorController
+	  skip_before_action :authenticate_author!, only: [:edit, :update]
+	  skip_before_action :check_authorization, only: [:edit, :update]
+	  skip_before_action :set_author
 	  before_action :set_post, only: [:show, :edit, :update, :destroy, :publish, :unpublish]
 	  # GET /posts
 	  # GET /posts.json
@@ -10,7 +13,7 @@ module Authors
 	  # GET /posts/1
 	  # GET /posts/1.json
 	  def show
-	  	@post = Post.all
+	  	@post = Post.friendly.find(params[:id])
 	  end
 
 	  # GET /posts/new

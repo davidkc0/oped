@@ -1,11 +1,11 @@
 <% provide(:page_title, @post.title)%>
 
 
-<div class="row">
+<div class="row-show">
 	<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
 		<h1><%= @post.title %></h1>
 		<p class="published-date"><%= @post.author.name %> | <%= @post.published_date%></p>
-		<%= render 'social_link' %>
+				<%= render 'social_link' %>
 		<p><%= @post.body.html_safe %></p>
 		
 		<%= render 'disqus' %>
