@@ -1,28 +1,34 @@
 <nav class="my-navbar navbar navbar-light bg-faded navbar-fixed-top">
   <div class='container'>
     <a class='navbar-brand' href='/'>
-      <%= link_to image_tag('gray_oped_logo.png', alt: 'OpEd'), '/' %>
+      <%= link_to image_tag('nav_logo.png', alt: 'OpEd'), '/' %>
       </a>
-        <button class="my-toggler navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
+       <!--  <button class="my-toggler navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
   <div class="collapse" id="exCollapsingNavbar">
-    <div class="bg text-muted p-a-1">
+    <div class="bg text-muted p-a-1"> -->
       <ul class="list-group list-group-flush">
-        <% if author_signed_in? %>
-          <li class="custom-list-item list-group-item">
-            <%= link_to 'My posts', authors_posts_path(1), class: "nav-link #{yield(:author)}" %>
-          </li>
-        <% end %>
+
+      <% if author_signed_in? %>
+
         <li class="custom-list-item list-group-item">
+          <%= link_to 'My posts', authors_posts_path(1), class: "nav-link #{yield(:author)}" %>
+        </li>
+
+        <li class="custom-list-item list-group-item">
+          <%= link_to 'Sign out', destroy_author_session_path, method: :delete,  class: "nav-link" %>
+        </li>
+        <% else %> 
+           <li class="custom-list-item list-group-item">
+             <a target="_blank" href="https://form.jotform.com/63356338782162" class="join">Share your opinion!</a>
+        <% end %>
+
+        <!-- <li class="custom-list-item list-group-item">
           <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
         </li>
         <li class="custom-list-item list-group-item">
           <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
-        </li>
-        <% if author_signed_in? %>
-          <li class="custom-list-item list-group-item">
-            <%= link_to 'Sign out', destroy_author_session_path, method: :delete,  class: "nav-link" %>
-          </li>
-        <% end %>
+        </li> -->
+
       </ul>
   </div>
   </div>

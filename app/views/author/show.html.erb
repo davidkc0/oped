@@ -1,7 +1,14 @@
-
-<h1 class="author_name">profile page for <%= @author.name %></h1>
-<%= avatar_for(@author) %>
-<%= @author.description %>
-<%if current_author == @author %>
-<%= link_to "Edit", edit_author_path(@author)%>
-<% end %>
+<div class=" author-block col-sm-6 col-lg-8 offset-lg-2"> 
+	<image class="profile_avatar">
+		<%= avatar_for(@author) %>	
+	</image>
+	<h1 class="author_name"><%= @author.name %></h1>
+	
+	<p class="author_description">
+		<%= @author.description %>
+	</p>
+	
+	<%if current_author == @author %>
+	<%= link_to "Edit", edit_author_path(@author)%>
+	<% end %> 
+</div>

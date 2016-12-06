@@ -21,16 +21,17 @@
 @import "avatar";
 @import "moving_button";
 @import "about";
+@import "author_profile_page";
 
 ::selection {
-  background: #6968AB; /* WebKit/Blink Browsers */
+  background: #f73859; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #6968AB; /* Gecko Browsers */
+  background: #f73859; /* Gecko Browsers */
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  
   position: relative;
   min-height: 100%;
 } 
@@ -39,16 +40,18 @@ html {
 body {
   /* Margin bottom by footer height */
   padding-top: 70px;
-  margin-bottom: 500px;
+  margin-bottom: 400px;
   background-color:  #f7f9f9;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
+
 p, div {
-    font-family: 'Lato', sans-serif;
+      font-family: 'Montserrat Light', arial;
 }
 
 

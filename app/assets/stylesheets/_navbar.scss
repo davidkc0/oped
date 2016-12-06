@@ -25,24 +25,24 @@
     }
 }
 
-.navbar-toggler {
+/*.navbar-toggler {
     float: right;
-}
+}*/
 .navbar a {
     text-decoration: none;
 }
 
 .navbar a:visited {
-    color: #373a3c!important;
+    color: #BE3144!important;
 
 }
 
 .navbar a:active {
-    color: #373a3c !important;
+    color: #BE3144 !important;
 }
 
 .navbar a {
-    color: #373a3c !important;
+    color: #BE3144 !important;
 }
 
 /*.collapse-bg .card .list-group-item {
@@ -61,16 +61,19 @@
         }
     }
 }*/
-.navbar-light .navbar-toggler {
+/*.navbar-light .navbar-toggler {
     border-color: transparent;
 
    
+}*/
+.list-group {
+    float: right;
 }
 
 .list-group-item {
+    display: inline;
     background-color: transparent;
     border: none;
-    font-style: italic;
     color: #ffffff;
 
 } 
