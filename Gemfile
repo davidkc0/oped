@@ -34,8 +34,11 @@ gem 'truncate_html'
 gem 'devise'
 gem 'annotate'
 gem 'carrierwave'
-gem "mini_magick"
+gem 'mini_magick'
 gem 'fog'
+gem 'fog-aws'
+gem 'figaro'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
