@@ -1,17 +1,12 @@
 <% provide(:page_title, @post.title)%>
 
-
-
 <div class="row-block">
 	<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
 		<h1><%= @post.title %></h1>
-		
-		<p class="published-date"><%= @post.published_date%></p>
-		<p class="show-article-body"><%= @post.body.html_safe %></p>
-		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583665b72cde5f5c"></script>
-		<br>
-		<br>
-		<div class="addthis_inline_share_toolbox"></div>
+
+		<p><%= @post.published_date%></p>
+
+		<p><%= @post.body.html_safe %></p>
 	</div>
 </div>
 

@@ -26,11 +26,23 @@
   border: 0;
 
 }
+.article-block {
+  font-size: 1.5em;
+  color: #4c4e4d;
+  line-height: 1.04;
+  letter-spacing: -.028em;
+}
 
 h3.article-title{
   font-size: 1.5em;
   color: #4c4e4d;
+  line-height: 1.04;
+  letter-spacing: -.028em;
+  text-decoration: none;
 } 
+.article-title a {
+  text-decoration: none;
+}
 
 
 
@@ -38,7 +50,7 @@ h3.article-title{
 .article-byline {
   float: left;
   font-size: 0.8em;
-  color: #bbb;
+  color: rgba(0,0,0,.44);
   margin: 0;
   display: block;
 }
@@ -46,21 +58,24 @@ h3.article-title{
 .published-by {
   font-style: italic;
   display: inline;
+  font-size: 14px;
 }
 .separator {
   display: inline;
+  font-size: 14px;
 }
 .published-date {
-  
   font-style: italic;
   display: inline;
+  font-size: 14px;
 } 
 
 .article-blurb {
 
   float: left;
-  font-size: 10px;
+  font-size: 14px;
   margin-bottom: 0.5;
+
 }
 
 .addthis_inline_share_toolbox {
@@ -80,14 +95,14 @@ h3.article-title{
     color: #373a3c !important;
 }
 
-.show_post {
-  margin-top: 20px;
+.article-content {
+  font-size: 18px;
 }
 
-.show-article-body{
-  font-size: 20px;
+/*form*/
+.field-label {
+  font-family: 'Montserrat-Light', sans-serif;
 }
-
 
 @media screen and (min-width: 34em) {
   .posts.index .card {

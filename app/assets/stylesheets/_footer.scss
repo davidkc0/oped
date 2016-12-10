@@ -51,7 +51,7 @@
 #site-footer .blurb {
 	width: 50%;
 	display: inline;
-	font-size: 12px;
+	font-size: 14px;
 	color: #373a3c;
 
 } 
@@ -62,11 +62,14 @@
 	bottom: 0;
 	position: absolute;
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 	color: #bbb;
 	width: calc(100% - 30px);
 } 
-.bottom a:link {
-	color: purple !important;
+.bottom {
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.bottom a{
+	color: #BE3144;
 }
 

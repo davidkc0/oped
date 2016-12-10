@@ -10,8 +10,10 @@
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
     <!-- fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
-    <!--  -->
+  
     <link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
     <!--  -->
 
   </head>
@@ -27,18 +29,50 @@
 
     	<%= render 'layouts/footer' %>
       
-      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583665b72cde5f5c"></script>
+      
 
     	<div class="container <%= controller_name %> <%= action_name %>">
     		<%= yield %>
     	</div>
     </div>
-
+    <!--  -->
+    <script type="text/javascript">$(document).ready(function() {
+    var script = 'http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-583665b72cde5f5c';
+    if (window.addthis){
+        window.addthis = null;
+        window._adr = null;
+        window._atc = null;
+        window._atd = null;
+        window._ate = null;
+        window._atr = null;
+        window._atw = null;
+    }
+    $.getScript( script, function() {
+        addthis.layers({
+            'theme' : 'transparent',
+            'share' : {
+                'position' : 'left',
+                'numPreferredServices' : 6
+            },
+            'follow' : {
+                'services' : [
+                    {'service': 'facebook', 'id': 'oped'},
+                    {'service': 'twitter', 'id': 'oped'}
+                ]
+            },
+            'whatsnext' : {},
+            'recommended' : {}
+        });
+    });
+});
+</script>
+    <!--  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--  -->
     <script>
       $(window).scroll(function(event){
         // console.log($(window).scrollTop());
-        if ($(window).scrollTop() > 100) {
+        if ($(window).scrollTop() > 50) {
           // Hide the Bar
           $("body").addClass("hide-bar");
         } else {
@@ -47,5 +81,6 @@
         }
       });
     </script>
+    <!--  -->
   </body>
 </html>

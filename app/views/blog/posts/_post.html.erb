@@ -23,13 +23,13 @@
             <%= link_to post.title, post %>
         </h4>
         <div class="article-byline">
-          <p class="published-by">by <%= link_to post.author.name, post.author %></p>
-          <p class="separator">|</p>
-          <p class="published-date"><%= post.published_date%></p>
+          <div class="published-by">by <%= link_to post.author.name, post.author %></div>
+          <div class="separator">|</div>
+          <div class="published-date"><%= post.published_date%></div>
         </div>
         <br>
         <div class="blurb">
-          <p class="article-blurb"><%= truncate_html(post.body.html_safe, length: 150)%></p>
+          <p class="article-blurb"><%= truncate_html(post.body.html_safe, length: 90)%></p>
         </div>
         
       </div>

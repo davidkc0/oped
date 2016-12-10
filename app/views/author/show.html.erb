@@ -9,6 +9,9 @@
 	</p>
 	
 	<%if current_author == @author %>
-	<%= link_to "Edit", edit_author_path(@author)%>
+		<div class="row push-center">
+			<%= link_to "Edit", edit_author_path(@author), class: "btn btn-secondary" %>
+		</div>
 	<% end %> 
 </div>
+

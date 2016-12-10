@@ -24,10 +24,10 @@
 @import "author_profile_page";
 
 ::selection {
-  background: #f73859; /* WebKit/Blink Browsers */
+  background: #BE3144; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #f73859; /* Gecko Browsers */
+  background: #BE3144; /* Gecko Browsers */
 }
 
 html {
@@ -39,9 +39,9 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  padding-top: 70px;
-  margin-bottom: 400px;
-  background-color:  #f7f9f9;
+  padding-top: 100px;
+  margin-bottom: 300px;
+  background-color:  #f9f9f9;
 
 }
 
@@ -50,8 +50,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-p, div {
-      font-family: 'Montserrat Light', arial;
+p {
+      font-family: 'Lora', serif;
+      font-size: 20px;
+      line-height: 1.58;
+      letter-spacing: -.003em;
 }
 
 

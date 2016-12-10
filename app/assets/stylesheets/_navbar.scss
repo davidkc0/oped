@@ -66,26 +66,29 @@
 
    
 }*/
-.list-group {
+.navbar-list-group {
     float: right;
 }
 
-.list-group-item {
+.navbar-list-group-item {
     display: inline;
     background-color: transparent;
     border: none;
-    color: #ffffff;
+    padding: 8px;
+   
 
 } 
 
 
 .my-navbar {
-    transition: 400ms;
+    /*transition: 400ms;*/
     position: fixed;
+
     top: 0;
 }
 
 body.hide-bar .my-navbar {
     /*display: none;*/
-    top: -100px;
+    /*top: -100px;*/
+    box-shadow: none;
 }
