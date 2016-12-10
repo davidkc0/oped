@@ -307,6 +307,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
+    tinymce-rails (4.5.1)
+      railties (>= 3.1.1)
     trollop (2.1.2)
     truncate_html (0.9.3)
     turbolinks (5.0.1)
@@ -355,6 +357,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  tinymce-rails
   truncate_html
   turbolinks (~> 5)
   tzinfo-data

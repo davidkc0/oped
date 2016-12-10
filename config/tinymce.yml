@@ -1,0 +1,9 @@
+toolbar:
+  - undo redo | insert | styleselect | bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |
+  - image | link | media
+plugins:
+  - image
+  - link
+  - media
+
+

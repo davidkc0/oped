@@ -1,4 +1,5 @@
 <%= form_for(post, url: url) do |f| %>
+<%= tinymce_assets %>
   <% if post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -52,7 +53,7 @@
     
     <div class="col-md-8">
         <div class="field">
-          <%= f.text_area :body %>
+          <%= f.text_area :body, class: "tinymce", :rows => 9, :cols => 50 %>
         </div>
     </div>
   </div>
@@ -61,3 +62,4 @@
     <%= f.text_area :description %>
   </div> -->
 <% end %>
+<%= tinymce %>

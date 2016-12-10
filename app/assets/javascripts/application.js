@@ -11,11 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+////= require tinymce-jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require jquery
 
 
 document.addEventListener("turbolinks:load", function() {
