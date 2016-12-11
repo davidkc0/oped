@@ -3,7 +3,7 @@
 	<% if post.published? %>
 	<td><%= link_to "Unpublish", unpublish_authors_post_path(post), method: :put, class: "btn btn-sm btn-primary"  %></td>
 	<% else %> 
-	<td><%= link_to 'Publish', publish_authors_post_path, data: { method: :put } %></td>
+	<td><%= link_to 'Publish', publish_authors_post_path(post), data: { method: :put }, class: "btn btn-sm btn-success" %></td>
 	<% end %>
 	<td><%= link_to "Edit", edit_authors_post_path(post)  %></td>
 	<td><%= link_to "Delete post", authors_post_path(post), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-sm btn-outline-danger"%></td>
