@@ -13,3 +13,35 @@
 	font-size: 20px; 
 }
 
+.quote {
+	max-width: 85%;
+	margin: 0 auto;
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+.quote i {
+	font-size: 400px;
+	opacity: .1;
+	font-style: normal;
+	font-family: 'Lora', serif;
+	display: block;
+	line-height: 480px;
+}
+.quote_body {
+	font-size: 35px;
+	line-height: 55px;
+	position: absolute;
+	top: 70px;
+	left: 35px;
+	text-shadow: 1px 0 1px white;
+	font-family: 'Lora', serif;
+	font-weight: 100;
+}
+
+.quote .quote_body strong {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
