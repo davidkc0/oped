@@ -24,9 +24,11 @@
 @import "author_profile_page";
 
 ::selection {
+  color: #fff;
   background: #BE3144; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
+  color: #fff;
   background: #BE3144; /* Gecko Browsers */
 }
 
