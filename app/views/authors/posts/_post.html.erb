@@ -3,7 +3,12 @@
 	<% if post.published? %>
 	<td><%= link_to "Unpublish", unpublish_authors_post_path(post), method: :put, class: "btn btn-sm btn-primary"  %></td>
 	<% else %> 
-	<td><%= link_to 'Publish', publish_authors_post_path(post), method: :put, class: "btn btn-sm btn-success" %></td>
+	<td>
+	<%= form_for post do |f| %>
+		<%= f.hidden_field :published, value: true %>
+		<%= f.submit 'Publish', :class => 'btn btn-sm btn-success' %>
+	<% end %>
+	</td>
 	<% end %>
 	<td><%= link_to "Edit", edit_authors_post_path(post)  %></td>
 	<td><%= link_to "Delete post", authors_post_path(post), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-sm btn-outline-danger"%></td>
