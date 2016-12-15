@@ -23,10 +23,23 @@
 }
 
 #site-footer .nav a {
-	color: #373a3c;
+	color: #65A2EA;
+	text-decoration: none;
 	font-size: 16px;
 	float: right;
 	padding-left: 20px;
+} 
+
+.nav a:visited {
+    color: #65A2EA !important;
+}
+
+.nav a:active {
+    color: #65A2EA !important;
+}
+
+.nav a:hover {
+    color: #1D7BE8 !important;
 }
 
 
@@ -70,6 +83,24 @@
 	font-family: 'Montserrat-Light', sans-serif;
 }
 .bottom a{
-	color: #BE3144;
+	color: #65A2EA;
+	text-decoration: none;
+} 
+
+.bottom a:visited {
+    color: #65A2EA !important;
+}
+
+.bottom a:active {
+    color: #65A2EA !important;
+}
+
+.bottom a:hover {
+    color: #1D7BE8 !important;
+}
+
+
+.colored-ed {
+	color: #65A2EA;
 }
 
