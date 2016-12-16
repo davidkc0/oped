@@ -1,4 +1,103 @@
-.article-block {
+.posts.index {
+  .card {
+    border: .5px solid #e4e8e6;
+    height: 400px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px  #f4f6f6;
+    .card-topper {
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    .card-block {
+      padding: 10px;
+      .read_more {
+        display: inline;
+        font-weight: 12px;
+        color: #65A2EA;
+        &:hover {
+          color: #1D7BE8;
+          text-decoration: none;
+        }
+      }
+      h3.article-title{
+        font-size: 1.5em;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #4c4e4d;
+        line-height: 1.04;
+        letter-spacing: -.028em;
+        text-decoration: none;
+      } 
+      .article-title a {
+        color: #4c4e4d;
+        text-decoration: none;
+      }
+      .article-byline {
+        padding-bottom: 10px;
+        float: left;
+        font-size: 0.8em;
+        color: rgba(0,0,0,.44);
+        margin: 0;
+        display: block;
+      }
+
+     .published-by {
+        padding-left: 20px;
+        font-style: italic;
+        display: inline;
+        font-size: 14px;
+        text-decoration: none;
+
+
+      }
+     .separator {
+        display: inline;
+        font-size: 14px;
+      }
+     .published-date {
+        font-style: italic;
+        display: inline;
+        font-size: 14px;
+      } 
+
+      .article-blurb {
+        padding-left: 20px;
+        text-align: left;
+        float: left;
+        font-size: 14px;
+        margin-bottom: 0.5;
+      } 
+
+      .article-blurb a{ 
+        text-decoration: none;
+        color: #4c4e4d;
+       }
+
+      .published-by a {
+        color: #65A2EA;
+        text-decoration: none;
+      }
+      .published-by a:visited {
+        color: #65A2EA !important;
+
+      }
+
+      .published-by a:active {
+        color: #65A2EA !important;
+      }
+
+      .published-by a:hover {
+        color: #1D7BE8 !important;
+      }
+
+      
+    }
+  }
+}
+/*.article-block {
   position: relative;
   display: table;
   width: 100%;
@@ -33,50 +132,12 @@
   letter-spacing: -.028em;
 }
 
-h3.article-title{
-  font-size: 1.5em;
-  color: #4c4e4d;
-  line-height: 1.04;
-  letter-spacing: -.028em;
-  text-decoration: none;
-} 
-.article-title a {
-  text-decoration: none;
-}
+*/
 
 
 
 
-.article-byline {
-  float: left;
-  font-size: 0.8em;
-  color: rgba(0,0,0,.44);
-  margin: 0;
-  display: block;
-}
 
-.published-by {
-  font-style: italic;
-  display: inline;
-  font-size: 14px;
-}
-.separator {
-  display: inline;
-  font-size: 14px;
-}
-.published-date {
-  font-style: italic;
-  display: inline;
-  font-size: 14px;
-} 
-
-.article-blurb {
-
-  float: left;
-  font-size: 14px;
-  margin-bottom: 0.5;
-
-}
 
 .addthis_inline_share_toolbox {
   padding-top: 10px;
@@ -98,6 +159,8 @@ h3.article-title{
 .article-content {
   font-size: 18px;
 }
+
+
 
 /*form*/
 .field-label {

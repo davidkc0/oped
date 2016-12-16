@@ -24,14 +24,17 @@
           </li>  
 
         <% else %> 
+
+          <li class="custom-list-item navbar-list-group-item">
+          <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
+          </li>
+
            <li class="custom-list-item navbar-list-group-item">
-             <a target="_blank" href="https://form.jotform.com/63356338782162" class="join">Share your opinion</a>
+             <a target="_blank" href="https://form.jotform.com/63356338782162" class="join">Share your opinion</a></li>
         <% end %>
 
-        <!-- <li class="custom-list-item list-group-item">
-          <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
-        </li>
-        <li class="custom-list-item list-group-item">
+        
+       <!--  <li class="custom-list-item list-group-item">
           <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
         </li> -->
 

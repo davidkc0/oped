@@ -1,17 +1,29 @@
-<!-- <div class='col-sm-6 col-lg-8 offset-lg-2'>
+<div class='col-sm-8 col-md-8 col-lg-8 offset-lg-2'>
   <div class="card">
     <div class="card-topper" style="background-image: url(<%= post.banner_image_url%>);"></div>
     <div class="card-block">
-      <h4 class="card-title"><%= link_to post.title, post %></h4>
-      <p class="published-by"><%= link_to post.author.name, post.author %></p>
-      <p class="published-date"><%= post.published_date%></p>
-      <p class="card-text"><%= truncate_html(post.body.html_safe, length: 250)%></p>
-      <%= link_to 'read more', post, class: 'btn btn-read' %>
+      <h3 class="article-title">
+            <%= link_to post.title, post %>
+        </h3>
+        <div class="article-byline">
+          <div class="published-by">by <%= link_to post.author.name, post.author %></div>
+          <div class="separator">|</div>
+          <div class="published-date"><%= post.published_date%></div>
+        </div>
+        <br>
+        <div class="blurb">
+          <div class="article-blurb">
+          <%= link_to post do %>
+          <%= truncate_html(post.body.html_safe, length: 80)%></div>
+          <% end %>
+          <!-- <div class="read_more"><%= link_to 'Read more...', post %></div> -->
+        </div>
+        
     </div>
   </div>
-</div>  -->
+</div> 
 
-<div class='col-sm-6 col-lg-8 offset-lg-2'>
+<!-- <div class='col-sm-6 col-lg-8 offset-lg-2'>
   <div class="article-block">
     <div class="article-image">
       <%= link_to post do %>
@@ -35,4 +47,4 @@
       </div>
 
   </div>
-</div>
+</div> -->
