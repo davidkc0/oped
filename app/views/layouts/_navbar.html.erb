@@ -1,6 +1,7 @@
 <nav class="my-navbar navbar navbar-light bg-faded navbar-fixed-top">
   <div class='container'>
     <a class='navbar-brand' href='/'>
+
       <img><%= link_to image_tag('oped_blue.svg', alt: 'Oped'), '/' %></img>
     </a>
         <button class="my-toggler navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -8,18 +9,20 @@
     <div class="bg text-muted p-a-1">
       <ul class="navbar-list-group list-group-flush">
 
-      <% if author_signed_in? %>
+      <% if author_signed_in? %> 
+
         <li class="custom-list-item navbar-list-group-item">
-          <%= link_to "New post", new_authors_post_path, class: "nav-link" %>
-          </li>
+          <%= link_to 'Sign out', destroy_author_session_path, method: :delete,  class: "nav-link" %>
+        </li>
 
         <li class="custom-list-item navbar-list-group-item">
           <%= link_to 'My posts', authors_posts_path(1), class: "nav-link #{yield(:author)}" %>
         </li>
 
         <li class="custom-list-item navbar-list-group-item">
-          <%= link_to 'Sign out', destroy_author_session_path, method: :delete,  class: "nav-link" %>
-        </li>
+          <%= link_to "New post", new_authors_post_path, class: "nav-link" %>
+          </li>  
+
         <% else %> 
            <li class="custom-list-item navbar-list-group-item">
              <a target="_blank" href="https://form.jotform.com/63356338782162" class="join">Share your opinion</a>

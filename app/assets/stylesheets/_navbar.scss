@@ -29,7 +29,7 @@
     display: block;
     height: auto;
     width: 52px;
-    padding-top: 5%;
+    padding-top: 30px;
     
 }
 .navbar a {
@@ -54,7 +54,7 @@
 
 
 
-.collapse-bg .card .list-group-item {
+/*.collapse-bg .card .list-group-item {
     padding: 0;
     border-radius: 0 !important;
     border-color: black;
@@ -69,25 +69,20 @@
             border-bottom: none;
         }
     }
-}
+}*/
 .navbar-light .navbar-toggler {
-    border-color: transparent;
-
-   
+    border-color: transparent;   
 }
 .navbar-list-group {
     float: right;
-    padding-right: 20px;
-
 }
 
 .navbar-list-group-item {
+    float: right;
     display: inline;
     background-color: transparent;
-    border: none;
+    border-top: 1px solid #e4e8e6;
     padding: 8px;
-   
-
 } 
 
 
