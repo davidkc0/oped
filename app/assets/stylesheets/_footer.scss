@@ -104,3 +104,16 @@
 	color: #65A2EA;
 }
 
+@media screen and (min-width: 10em) and (max-width: 48em){
+  .footer {
+    height: 50px;
+    background-color: transparent;
+  } 
+  .nav {
+  	display: none;
+  }
+
+  #site-footer .blurb {
+  	display: none;
+  }
+}

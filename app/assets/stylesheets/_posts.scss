@@ -37,6 +37,7 @@
       }
       .article-byline {
         padding-bottom: 10px;
+        padding-left: 20px;
         float: left;
         font-size: 0.8em;
         color: rgba(0,0,0,.44);
@@ -45,7 +46,7 @@
       }
 
      .published-by {
-        padding-left: 20px;
+        
         font-style: italic;
         display: inline;
         font-size: 14px;
@@ -166,10 +167,10 @@
 .field-label {
   font-family: 'Montserrat-Light', sans-serif;
 }
-
-@media screen and (min-width: 34em) {
+/* Small. */
+@media screen and (min-width: 10em) {
   .posts.index .card {
-    height: 440px;
+    height: 500px;
   }
 }
 
