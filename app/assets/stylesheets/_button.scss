@@ -1,0 +1,40 @@
+.button {
+	font-family: 'Montserrat-Light', sans-serif;
+	font-size: 18px;
+	border: 1px solid #65A2EA;
+	background-color: #65A2EA;
+	color: white;
+	padding: 0.5em 1.5em !important;
+	border-radius: 1.5em; 
+	position: absolute;
+	text-align: center;
+	left: 25%;
+	&:hover {
+		border: 1px solid #1D7BE8;
+		background-color: #1D7BE8; 
+		color: white;
+		text-decoration: none;
+		a {
+			color: white !important;
+		}
+	}
+}
+
+.nav-button {
+	font-family: 'Montserrat-Light', sans-serif;
+	font-size: 12px;
+	border: 1px solid #65A2EA;
+	background-color: #65A2EA;
+	color: white !important;
+	padding: 0.5em 1.5em !important;
+	border-radius: 1.5em; 
+	&:hover {
+		border: 1px solid #1D7BE8;
+		background-color: #1D7BE8; 
+		color: white !important;
+		text-decoration: none;
+		a {
+			color: white !important;
+		}
+	}
+}

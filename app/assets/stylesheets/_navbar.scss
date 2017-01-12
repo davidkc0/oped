@@ -97,3 +97,37 @@ body.hide-bar .my-navbar {
     /*top: -100px;*/
     box-shadow: none;
 }
+
+/*@media screen and (min-width: 10em) and (max-width: 48em){
+    .my-toggler { 
+        display: none;
+    }
+
+    .navbar a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar a:visited {
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar a:active {
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+    
+
+}
+
+@media screen and (min-width: 49em) {
+    .nav-button {
+        display: none;
+    }
+}*/

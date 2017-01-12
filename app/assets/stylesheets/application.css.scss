@@ -22,6 +22,7 @@
 @import "moving_button";
 @import "about";
 @import "author_profile_page";
+@import "button";
 
 ::selection {
   color: #fff;
@@ -41,9 +42,9 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  padding-top: 7em;
-  margin-bottom: 20em;
-  background-color:  #f9f9f9;
+  padding-top: 3em;
+  margin-bottom: 10em;
+  background-color:   #fafafa;
 
 }
 

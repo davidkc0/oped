@@ -119,4 +119,47 @@
   #site-footer .bottom {
   	display: none;
   }
+
+.mobile-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  left: 0;
+  height: 115px;
+  background-color: transparent; 
 }
+
+.mobile-bottom {
+	margin-top: 10px;
+	margin-bottom: -5px;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+	color: #373a3c;
+	width: 100%;
+	font-family: 'Montserrat-Light', sans-serif;
+
+}
+
+.mobile-bottom a{
+	color: #65A2EA;
+	text-decoration: none;
+} 
+
+.mobile-bottom a:visited {
+    color: #65A2EA !important;
+}
+
+.mobile-bottom a:active {
+    color: #65A2EA !important;
+}
+
+.mobile-bottom a:hover {
+    color: #1D7BE8 !important;
+}
+
+}
+
+
