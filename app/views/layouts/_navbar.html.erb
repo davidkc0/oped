@@ -1,9 +1,13 @@
-<nav class="my-navbar navbar navbar-light bg-faded navbar-fixed-top">
+<nav class="my-navbar navbar navbar-fixed-top">
   <div class='container'>
     <a class='navbar-brand' href='/'>
 
       <img><%= link_to image_tag('oped_blue.png', alt: 'Oped'), '/' %></img>
     </a>
+      <ul class="nav navbar-nav navbar-right">
+      <li class= "opinion-button"><%= link_to "Share your opinion", "https://form.jotform.com/63356338782162" %>
+      </li>
+    <!-- 
         <button class="my-toggler navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
   <div class="collapse" id="exCollapsingNavbar">
     <div class="bg text-muted p-a-1">

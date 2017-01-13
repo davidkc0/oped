@@ -162,4 +162,11 @@
 
 }
 
-
+@media screen and (min-width: 48em) {
+	.mobile-footer {
+  	display: none; 
+	}
+	.mobile-bottom {
+		display: none;
+	}
+}
