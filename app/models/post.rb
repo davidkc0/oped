@@ -18,7 +18,7 @@
 class Post < ApplicationRecord
 	extend FriendlyId 
 	validates :title, presence: true, length: {minimum: 1, maximum: 80}
-	validates :body, presence: true, length: {minimum: 5, maximum: 5000}
+	validates :body, presence: true, length: {minimum: 4000, maximum: 500000}
 	validates :banner_image_url, presence: true 
 	friendly_id :title, use: :slugged
 
